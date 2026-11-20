@@ -1,0 +1,467 @@
+.yumiko-body {
+    background-color: #FFF7E6;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: #2D3A47;
+}
+
+.yumiko-navbar {
+    width: 850px;
+    margin: 0 auto 15px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.yumiko-nav-kiri, .yumiko-nav-kanan, .yumiko-nav-ikon {
+    border: 2px solid #994D63;
+    background-color: #FFB6C1;
+    color: #994D63;
+    padding: 4px 8px;
+    font-weight: bold;
+}
+
+.yumiko-nav-tengah {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.yumiko-nav-judul {
+    border: 2px solid #6E8B3D;
+    background-color: #A8B58A;
+    color: #FFF7E6;
+    padding: 5px 40px;
+    font-weight: bold;
+}
+
+.yumiko-kotak-utama {
+    width: 850px;
+    margin: 0 auto 20px auto;
+    border: 3px solid #2D3A47;
+    background-color: #FFFFFF;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.yumiko-radio-slide {
+    display: none;
+}
+
+.yumiko-slide-item {
+    display: none;
+}
+
+#yumiko-slide1:checked ~ .yumiko-kumpulan-slide .yumiko-konten-1,
+#yumiko-slide2:checked ~ .yumiko-kumpulan-slide .yumiko-konten-2,
+#yumiko-slide3:checked ~ .yumiko-kumpulan-slide .yumiko-konten-3,
+#yumiko-slide4:checked ~ .yumiko-kumpulan-slide .yumiko-konten-4,
+#yumiko-slide5:checked ~ .yumiko-kumpulan-slide .yumiko-konten-5 {
+    display: block;
+}
+
+.yumiko-tabel-profil {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.yumiko-kolom-foto {
+    width: 240px;
+    text-align: center;
+    vertical-align: top;
+    padding-right: 15px;
+}
+
+.yumiko-foto-bulat {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    border: 3px solid #994D63;
+    background-color: #FFB6C1;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 12px auto;
+}
+
+.yumiko-caption-foto {
+    border: 2px solid #5C768D;
+    background-color: #A9B7C6;
+    color: #2D3A47;
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.yumiko-kolom-biodata {
+    vertical-align: top;
+}
+
+.yumiko-baris-atas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.yumiko-judul-nama {
+    border: 2px solid #7A3B44;
+    background-color: #B46A72;
+    color: #FFF7E6;
+    padding: 6px 25px;
+    font-weight: bold;
+    font-size: 18px;
+    width: 65%;
+}
+
+.yumiko-kotak-kecil {
+    border: 2px solid #994D63;
+    background-color: #FFB6C1;
+}
+
+.yumiko-subjudul-kelas {
+    border: 2px solid #6E8B3D;
+    background-color: #A8B58A;
+    color: #FFF7E6;
+    padding: 4px 15px;
+    font-weight: bold;
+    width: 55%;
+    margin-bottom: 10px;
+}
+
+.yumiko-teks-biodata {
+    border-bottom: 2px solid #2D3A47;
+    margin: 6px 0 6px 80px;
+    padding-bottom: 3px;
+    font-size: 14px;
+}
+
+.yumiko-bintang-rating {
+    color: #B46A72;
+    font-size: 15px;
+    margin-top: 10px;
+    letter-spacing: 2px;
+}
+
+.yumiko-baris-badge {
+    display: flex;
+    align-items: center;
+    margin: 6px 0 12px 0;
+}
+
+.yumiko-badge-gabung {
+    display: flex;
+    gap: 0;
+}
+
+.yumiko-input-pilihan {
+    display: none;
+}
+
+.yumiko-pilihan-suka, .yumiko-pilihan-tidak {
+    border: 2px solid #5C768D;
+    background-color: #A9B7C6;
+    color: #2D3A47;
+    padding: 4px 16px;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+    display: inline-block;
+    user-select: none;
+}
+
+.yumiko-pilihan-suka:has(.yumiko-input-pilihan:checked),
+.yumiko-pilihan-tidak:has(.yumiko-input-pilihan:checked) {
+    background-color: #FFB6C1;
+    border-color: #994D63;
+    color: #5A2A35;
+}
+
+.yumiko-badge-kanan {
+    border: 2px solid #1B242C;
+    background-color: #2D3A47;
+    color: #FFF7E6;
+    padding: 4px 20px;
+    font-weight: bold;
+    font-size: 13px;
+    margin-left: auto;
+}
+
+.yumiko-baris-bawah-slide {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.yumiko-kontrol-slide {
+    display: flex;
+    gap: 5px;
+}
+
+.yumiko-tombol-titik {
+    color: #5C768D;
+    font-size: 16px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.yumiko-aktif-1, .yumiko-aktif-2, .yumiko-aktif-3, .yumiko-aktif-4, .yumiko-aktif-5 {
+    color: #B46A72;
+}
+
+.yumiko-garis-bawah {
+    border-bottom: 2px solid #2D3A47;
+    flex-grow: 1;
+    font-size: 13px;
+    padding-bottom: 2px;
+}
+
+.yumiko-bagian-karya {
+    width: 850px;
+    margin: 0 auto 15px auto;
+}
+
+.yumiko-tabel-karya {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.yumiko-sel-karya {
+    width: 115px;
+    vertical-align: top;
+    padding-right: 12px;
+}
+
+.yumiko-foto-karya {
+    width: 105px;
+    height: 105px;
+    border: 2px solid #5C768D;
+    background-color: #A9B7C6;
+    object-fit: cover;
+    display: block;
+}
+
+.yumiko-sel-teks-karya {
+    vertical-align: top;
+}
+
+.yumiko-judul-karya {
+    border: 2px solid #7A3B44;
+    background-color: #B46A72;
+    color: #FFF7E6;
+    padding: 4px 15px;
+    font-weight: bold;
+    width: 50%;
+    margin-bottom: 8px;
+}
+
+.yumiko-teks-karya {
+    border-bottom: 2px solid #2D3A47;
+    margin: 6px 0;
+    padding-bottom: 2px;
+    font-size: 14px;
+}
+
+.yumiko-badge-karya-kanan {
+    border: 2px solid #994D63;
+    background-color: #FFB6C1;
+    color: #5A2A35;
+    padding: 3px 15px;
+    font-weight: bold;
+    font-size: 12px;
+    width: 140px;
+    text-align: center;
+    margin-left: auto;
+    margin-top: 8px;
+}
+
+.yumiko-pembatas-judul {
+    width: 850px;
+    margin: 0 auto 15px auto;
+    border-bottom: 2px solid #2D3A47;
+    display: flex;
+    align-items: center;
+}
+
+.yumiko-label-pembatas {
+    border: 2px solid #6E8B3D;
+    background-color: #A8B58A;
+    color: #FFF7E6;
+    padding: 3px 25px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+/* CSS untuk Kotak Karakter Fiksi Favorit */
+.yumiko-kotak-fiksi {
+    width: 850px;
+    margin: 0 auto 12px auto;
+    border: 2px solid #2D3A47;
+    background-color: #FFFFFF;
+    padding: 10px 15px;
+    box-sizing: border-box;
+}
+
+.yumiko-tabel-fiksi {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.yumiko-sel-bulat-fiksi {
+    width: 85px;
+    vertical-align: middle;
+}
+
+.yumiko-foto-fiksi {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid #994D63;
+    background-color: #FFB6C1;
+    object-fit: cover;
+    display: block;
+}
+
+.yumiko-sel-isi-fiksi {
+    vertical-align: top;
+    padding-left: 10px;
+}
+
+.yumiko-bintang-fiksi {
+    font-size: 13px;
+    color: #B46A72;
+    letter-spacing: 2px;
+    margin-bottom: 4px;
+}
+
+.yumiko-judul-fiksi {
+    border: 2px solid #5C768D;
+    background-color: #A9B7C6;
+    color: #2D3A47;
+    padding: 3px 12px;
+    font-weight: bold;
+    font-size: 13px;
+    width: 45%;
+    margin-bottom: 6px;
+}
+
+.yumiko-teks-fiksi {
+    border-bottom: 2px solid #2D3A47;
+    margin: 5px 0;
+    padding-bottom: 2px;
+    font-size: 13px;
+    width: 85%;
+}
+
+.yumiko-sel-kanan-bulat {
+    width: 30px;
+    vertical-align: top;
+    text-align: right;
+    font-weight: bold;
+    color: #B46A72;
+}
+
+.yumiko-kotak-favorit {
+    width: 850px;
+    margin: 15px auto 0 auto;
+    border: 3px solid #2D3A47;
+    background-color: #FFFFFF;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.yumiko-header-favorit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.yumiko-judul-favorit {
+    border: 2px solid #7A3B44;
+    background-color: #B46A72;
+    color: #FFF7E6;
+    padding: 5px 25px;
+    font-weight: bold;
+    width: 45%;
+}
+
+.yumiko-ikon-kanan-favorit {
+    font-weight: bold;
+    font-size: 18px;
+    color: #2D3A47;
+}
+
+.yumiko-tabel-galeri-favorit {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+.yumiko-sel-gambar-favorit {
+    width: 33.3%;
+    text-align: center;
+    padding: 5px;
+}
+
+.yumiko-gambar-favorit {
+    width: 220px;
+    height: 180px;
+    border: 2px solid #994D63;
+    background-color: #FFB6C1;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.yumiko-bawah-favorit {
+    padding: 0 15px;
+}
+
+.yumiko-baris-judul-bawah {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.yumiko-judul-kecil-favorit {
+    border: 2px solid #6E8B3D;
+    background-color: #A8B58A;
+    color: #FFF7E6;
+    padding: 3px 15px;
+    font-weight: bold;
+    font-size: 13px;
+    width: 220px;
+}
+
+.yumiko-kotak-status {
+    border: 2px solid #994D63;
+    background-color: #FFB6C1;
+    color: #5A2A35;
+    padding: 2px 8px;
+    font-size: 12px;
+}
+
+.yumiko-teks-favorit {
+    border-bottom: 2px solid #2D3A47;
+    margin: 6px 0;
+    padding-bottom: 3px;
+    font-size: 14px;
+}
+
+.yumiko-baris-penutup {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.yumiko-badge-penutup {
+    border: 2px solid #1B242C;
+    background-color: #2D3A47;
+    color: #FFF7E6;
+    padding: 4px 20px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+

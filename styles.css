@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #FFEE;
+    font-family: Arial, sans-serif;
+    color: #A16464;
+    padding: 30px 15px;
+}
+
+
+.container {
+    max-width: 850px;
+    margin: auto;
+    background-color: #8E91;
+    border: 2px solid #9b8a70;
+    padding: 20px;
+}
+
+
+/* BAGIAN PERTAMA: PROFILE */
+
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 12px;
+    min-height: 175px;
+}
+
+
+.profile-photo {
+    width: 145px;
+    height: 145px;
+    flex-shrink: 0;
+    border: 2px solid #E3E1C1;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #FFFEE3;
+}
+
+
+.profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.profile-info {
+    flex: 1;
+}
+
+
+.profile-info h1 {
+    border: 2px solid #A3947D;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+
+.profile-info p {
+    border: 2px solid #a3947d;
+    border-radius: 20px;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+
+.profile-tags {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+
+.profile-tags span {
+    border: 2px solid #a3947d;
+    border-radius: 20px;
+    padding: 5px 18px;
+    font-size: 12px;
+}
+
+
+/* BAGIAN KEDUA: ABOUT */
+
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+
+.about-box {
+    border: 2px solid #a3947d;
+    border-radius: 12px;
+    padding: 15px;
+    min-height: 190px;
+}
+
+
+.about-box h2 {
+    background-color: #d9cfbb;
+    border-radius: 15px;
+    padding: 9px;
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+
+
+.about-box p {
+    border-bottom: 1px solid #9b8a70;
+    padding: 7px 3px;
+    font-size: 13px;
+}
+
+
+/* BAGIAN KETIGA: ARTWORK */
+
+
+.artwork {
+    border: 2px solid #a3947d;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 12px;
+}
+
+
+.artwork h2 {
+    border: 2px solid #a3947d;
+    border-radius: 20px;
+    padding: 8px 15px;
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+
+.artwork-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+
+.artwork-item {
+    height: 150px;
+    border: 2px solid #a3947d;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #e5dac6;
+}
+
+
+.artwork-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* BAGIAN KEEMPAT: FOOD */
+
+
+.food {
+    border: 2px solid #a3947d;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 12px;
+}
+
+
+.food h2 {
+    background-color: #d9cfbb;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+
+.food-content {
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    gap: 15px;
+}
+
+
+.food-photo {
+    min-height: 220px;
+    border: 2px solid #a3947d;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #e5dac6;
+}
+
+
+.food-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.food-info {
+    padding: 20px 5px;
+}
+
+
+.food-info p {
+    border-bottom: 1px solid #9b8a70;
+    padding: 7px;
+    font-size: 13px;
+}
+
+
+/* BAGIAN KELIMA: FAVORITES */
+
+
+.favorites {
+    border: 2px solid #a3947d;
+    border-radius: 12px;
+    padding: 15px;
+}
+
+
+.favorites h2 {
+    border: 2px solid #a3947d;
+    border-radius: 20px;
+    padding: 9px;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+
+.favorite-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+
+.favorite-item {
+    border: 2px solid #a3947d;
+    border-radius: 10px;
+    padding: 8px;
+    text-align: center;
+    background-color: #eee5d6;
+}
+
+
+.favorite-item img {
+    width: 100%;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 7px;
+    background-color: #e5dac6;
+}
+
+
+.favorite-item h3 {
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+
+.favorite-item p {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+
+/* TAMPILAN HP */
+
+
+@media (max-width: 600px) {
+
+
+    body {
+        padding: 10px;
+    }
+
+
+    .container {
+        padding: 10px;
+    }
+
+
+    .profile {
+        gap: 12px;
+        padding: 12px;
+    }
+
+
+    .profile-photo {
+        width: 95px;
+        height: 95px;
+    }
+
+
+    .profile-info h1 {
+        font-size: 17px;
+    }
+
+
+    .about {
+        grid-template-columns: 1fr;
+    }
+
+
+    .food-content {
+        grid-template-columns: 1fr;
+    }
+
+
+    .food-photo {
+        height: 180px;
+    }
+
+
+    .favorite-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    .favorite-item {
+        padding: 5px;
+    }
+
+
+    .favorite-item img {
+        height: 85px;
+    }
+
+
+}
